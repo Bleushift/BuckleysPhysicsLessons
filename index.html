@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics with Buckley</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .grid-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .grid-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .grid-item a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .grid-item a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>Explorable Physics</header>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="motion.html">
+                <img src="motion_icon.png" alt="Motion">
+                <p>Motion<br>Units<br>Kinematics</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="newtons-laws.html">
+                <img src="newton_icon.png" alt="Newton's Laws">
+                <p>Newton's Laws<br>Forces<br>Friction</p>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="momentum.html">
+                <img src="momentum_icon.png" alt="Momentum">
+                <p>Momentum<br>Conservation</p>
+            </a>
+        </div>
+        <!-- Add more sections for each physics topic -->
+    </div>
+</body>
+</html>
