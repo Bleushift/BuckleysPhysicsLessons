@@ -3,47 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motion</title>
+    <title>Gravitational Fields</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
 
         header {
-            font-size: 30px;
+            background-color: #333;
+            color: white;
             text-align: center;
-            margin-bottom: 20px;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        section {
-            margin-bottom: 30px;
+        .presentation-container {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 50px;
         }
 
-        footer {
-            text-align: center;
-            font-size: 12px;
-            margin-top: 50px;
-            color: gray;
+        .notes {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <header>Gravitational Fields</header>
 
-    <section>
-        <h2>Newton's Gravitational Law</h2>
-        <p>Put in content about Fields.</p>
-    </section>
+    <!-- Embed the reveal.js presentation using an iframe -->
+    <div class="presentation-container">
+        <iframe src="test.html" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    <section>
-        <h2>Example Calculations</h2>
-        <p>Here you could embed calculations, visualizations, or notes.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Physics with Buckley</p>
-    </footer>
+    <!-- Lesson Notes Section -->
+    <div class="notes">
+        <h2>Lesson Notes</h2>
+        <p>Gravitational fields explain the force that masses exert on each other...</p>
+        <!-- More notes can go here -->
+    </div>
 </body>
 </html>
