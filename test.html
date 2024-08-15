@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitational Fields Presentation</title>
+
+    <!-- Include Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom font and styling */
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Generate 40 slides -->
+            <!-- Example slide with speaker notes -->
+            <section data-transition="slide">
+                <h2>Slide 1</h2>
+                <aside class="notes">
+                    These are the speaker notes for Slide 1.
+                </aside>
+            </section>
+
+            <section data-transition="zoom">
+                <h2>Slide 2</h2>
+                <aside class="notes">
+                    These are the speaker notes for Slide 2.
+                </aside>
+            </section>
+
+            <section data-transition="zoom-in fade-out">
+                <h2>Slide 3</h2>
+                <aside class="notes">
+                    These are the speaker notes for Slide 3.
+                </aside>
+            </section>
+
+            <section data-transition="convex">
+                <h2>Slide 4</h2>
+                <aside class="notes">
+                    These are the speaker notes for Slide 4.
+                </aside>
+            </section>
+
+            <!-- More slides from 5 to 40 with the default transition -->
+            <!-- You can copy and extend as needed -->
+            <section>
+                <h2>Slide 5</h2>
+                <aside class="notes">
+                    Speaker notes for slide 5.
+                </aside>
+            </section>
+            
+            <!-- Continue up to Slide 40 -->
+            <section>
+                <h2>Slide 40</h2>
+                <aside class="notes">
+                    Speaker notes for slide 40.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js and Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- Math plugin for rendering equations -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <!-- Speaker Notes plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            slideNumber: true,
+            history: true,
+            center: true,
+            transition: 'slide', // Default transition
+            plugins: [RevealNotes, RevealMath.KaTeX], // Enables speaker notes and math
+            katex: {
+                version: 'latest', // Use latest KaTeX version
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true }
+                ],
+                ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            },
+            showNotes: true, // Show notes at the bottom of the presentation if needed
+        });
+    </script>
+
+</body>
+
+</html>
